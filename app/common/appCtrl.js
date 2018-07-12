@@ -1,12 +1,4 @@
-﻿/*==========================================================
-    Author      : Ranjithprabhu K
-    Date Created: 24 Dec 2015
-    Description : Controller to handle main application
-    
-    Change Log
-    s.no      date    author     description     
- ===========================================================*/
-
+﻿
 app.controller("appCtrl", ['$rootScope', '$scope', '$state', '$location', 'Flash','appSettings',
 function ($rootScope, $scope, $state, $location, Flash,appSettings) {
 
@@ -14,7 +6,6 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
     $rootScope.layout = appSettings.layout;
 
     var vm = this;
-
 
     //avalilable themes
     vm.themes = [
