@@ -1,20 +1,10 @@
-/*==========================================================
-    Author      : Ranjithprabhu K
-    Date Created: 24 Dec 2015
-    Description : main application base
-    
-    Change Log
-    s.no      date    author     description     
-    
-
- ===========================================================*/
-
 var app = angular.module('app', ['ui.router', 'ui.bootstrap', 'flash',
     //main modules
     'login', 'dashboard']);
 
 
-app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', function ($stateProvider, $locationProvider, $urlRouterProvider, $modalInstance) {
+app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', 
+function ($stateProvider, $locationProvider, $urlRouterProvider, $modalInstance) {
 
     //IdleScreenList
     $stateProvider
@@ -24,13 +14,13 @@ app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', functio
            controller: 'appCtrl',
            controllerAs: 'vm',
            data: {
-               pageTitle: 'Login'
+               pageTitle: 'Dashboard'
            }
        });
 
-    $urlRouterProvider.otherwise('login');
-
-    //$urlRouterProvider.otherwise('app/dashboard');
+    //$urlRouterProvider.otherwise('login');
+    $urlRouterProvider.otherwise('app/dashboard');
+    
     //$urlRouterProvider.otherwise('/app/dashboard');
 }]);
 
