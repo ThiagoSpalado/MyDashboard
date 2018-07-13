@@ -1,19 +1,22 @@
 ﻿<div class="wrapper">
-    
     <header class="main-header">
+
         <!-- Logo -->
         <a class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>TS</b></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>MyDashboard</b></span>
+            <span class="logo-lg"><b>Thiago Souza</b></span>
         </a>
+
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
+
             <!-- Sidebar toggle button-->
             <a class="sidebar-toggle" data-toggle="offcanvas" role="button" data-ng-click="vm.sideBar(1);">
                 <span class="sr-only">Toggle navigation</span>
             </a>
+            
             <!-- Navbar Right Menu -->
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
@@ -55,18 +58,19 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="~/../../../images/ranjith.png" class="user-image" alt="User Image" />
-                            <span class="hidden-xs">Thiago Souza</span>
+                            <img src="~/../../../MyDashboard/images/ranjith.png" class="user-image" alt="User Image" />
+                            <span class="hidden-xs">Thaigo Souza</span>
                         </a>
                         <ul class="dropdown-menu">
+                            
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="~/../../../images/ranjith.png" class="img-circle" alt="User Image">
+                                <img src="~/../../../MyDashboard/images/ranjith.png" class="img-circle" alt="User Image">
                                 
-                                <h3>Thiago Souza</h3>
+                                    <h3>Thiago Souza</h3>
                                 <p class="text-center">
                                     Software Developer
-                                     <small>since 2012</small>
+                                     <small>Playing in Web - since 2012</small>
                                  </p>
                             </li>
                             <!-- Menu Footer-->
@@ -88,39 +92,48 @@
 
     <!-- Left side column. contains the logo and sidebar -->
     <aside class="main-sidebar">
+
         <!-- sidebar -->
         <section class="sidebar">
+
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="~/../../../images/ranjith.png" class="img-circle" alt="User Image">
+                    <img src="~/../../../MyDashboard/images/ranjith.png" class="img-circle" alt="User Image">
                 </div>
+
                 <div class="pull-left info">
-                    <p>Thiago Souza</p>
+                    <p>Thaigo Souza</p>
                     <span class="text-aqua text-sm">Software Developer</span>
                 </div>
             </div>
+
             <!-- search form -->
             <form action="#" method="get" class="sidebar-form">
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Search...">
+                    
                     <span class="input-group-btn">
                         <button type="button" name="search" id="search-btn" class="btn btn-flat" data-ng-click="vm.search();"><i class=" fa fa-search"></i></button>
                     </span>
                 </div>
             </form>
+
             <!-- /.search form -->
             <ul class="sidebar-menu">
+
                 <li class="treeview" ui-sref-active="active" ng-click="vm.sideBar();" data-ng-repeat="menu in vm.menuItems">
                     <a ui-sref="app.{{menu.state}}">
                         <i class="fa fa-{{menu.icon}}"></i> <span>{{menu.title}}</span>
                     </a>
                 </li>
+
                 <li class="treeview" ui-sref-active="active" ng-click="vm.sideBar();">
                     <a href="https://github.com/ThiagoSpalado" target="_blank">
-                        <i class="fa fa-github"></i> <span>Meu Github</span>
+                        <i class="fa fa-github"></i> <span>My Github</span>
                     </a>
                 </li>
+
             </ul>
         </section>
         <!-- /.sidebar -->
@@ -133,8 +146,9 @@
 
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
-            <b>Versão</b> 1.0.0
+            <b>Version</b> 1.0.0
         </div>
         <strong>Copyright &copy; <a href="https://opensource.org/licenses/MIT" target="_blank">The MIT License (MIT)</a>.</strong> All rights reserved.
     </footer>
+
 </div>

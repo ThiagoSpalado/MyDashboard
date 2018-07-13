@@ -14,14 +14,14 @@ function ($stateProvider, $locationProvider, $urlRouterProvider, $modalInstance)
            controller: 'appCtrl',
            controllerAs: 'vm',
            data: {
-               pageTitle: 'dashboard'
+               pageTitle: 'Dashboard'
            }
        });
 
-       $urlRouterProvider.otherwise('app/dashboard');
+    //$urlRouterProvider.otherwise('login');
+    $urlRouterProvider.otherwise('app/dashboard');
     
-        //$urlRouterProvider.otherwise('login');
-        //$urlRouterProvider.otherwise('/app/dashboard');
+    //$urlRouterProvider.otherwise('/app/dashboard');
 }]);
 
 // set global configuration of application and it can be accessed by injecting appSettings in any modules
