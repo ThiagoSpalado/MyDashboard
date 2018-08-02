@@ -100,6 +100,18 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
     ];
 
 
+    //available languages
+    vm.languages = [
+        {
+            name: "BR",
+            lang: "pt-br"
+        },
+        {
+            name: "EN",
+            lang: "en"
+        },
+    ];
+
     //Main menu items of the dashboard
     vm.menuItems = [
         {
@@ -148,6 +160,11 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
             state: "contact"
         }
     ];
+
+    //set language
+    vm.setLanguage = function (value) {
+        //$rootScope.layout = value;
+    };
 
     //set the theme selected
     vm.setTheme = function (value) {
