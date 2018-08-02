@@ -33,8 +33,6 @@ app.service('apiService', ['$http', '$q', 'appSettings', function ($http, $q, ap
         return deferred.promise;
     };
 
-
-
     //===========================UPDATE RESOURCE==============================
     var update = function (module, parameter) {
         console.log("hitting Service=============");
