@@ -1,6 +1,6 @@
 ﻿
 app.controller("appCtrl", ['$rootScope', '$scope', '$state', '$location', 'Flash','appSettings',
-function ($rootScope, $scope, $state, $location, Flash,appSettings) {
+function ($rootScope, $scope, $state, $location, Flash, appSettings) {
 
     $rootScope.theme = appSettings.theme;
     $rootScope.layout = appSettings.layout;
@@ -163,6 +163,16 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
 
     //set language
     vm.setLanguage = function (value) {
+
+        if(value == "BR")
+        {
+            vm.tema = "Temas";
+        }
+
+        if(value == "EN")
+        {
+            vm.tema = "Themes";
+        }
         //$rootScope.layout = value;
     };
 
